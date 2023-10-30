@@ -1,0 +1,15 @@
+# This template requires Lima v0.7.0 or later
+images:
+  - location: "https://gitlab.archlinux.org/retpolanne/arch-boxes/-/jobs/188596/artifacts/raw/output/Arch-Linux-x86_64-cloudimg-20231030.188596.qcow2"
+    arch: "aarch64"
+    digest: "sha512:5f6c1ecb250fe3c0e913a776421b5f150c0332ed4e5447be86eee6c75313a6db7e5983dc9c6c1dfc6cadc5bed773072ba6563225926fdcfb262ea6dbbe692b91"
+
+mounts:
+- location: "~"
+- location: "/tmp/lima"
+  writable: true
+# reverse-sshfs seems unstable with ArchLinux ?
+mountType: "9p"
+vmType: "qemu"
+firmware:
+  legacyBIOS: true

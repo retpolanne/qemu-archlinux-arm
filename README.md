@@ -76,3 +76,13 @@ umount /mnt/root
 ```
 
 Copy `/mnt/boot/Image` and `/mnt/boot/initramfs-linux.img` to this repo's directory
+
+## 3. Launch
+
+root:root login.
+
+```sh
+./launch.sh
+pacman-key --init
+pacman-key --populate archlinuxarm
+```

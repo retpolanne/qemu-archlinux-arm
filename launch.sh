@@ -2,6 +2,7 @@
 
 qemu-system-aarch64 \
 	-M virt,accel=hvf,highmem=off \
+	-m 2G \
 	-cpu cortex-a72 \
 	-kernel Image \
 	-drive "file=arch-linux-arm.img,format=raw,index=0,media=disk" \
