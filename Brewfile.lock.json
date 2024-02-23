@@ -1,0 +1,62 @@
+{
+  "entries": {
+    "brew": {
+      "qemu": {
+        "version": "8.2.1",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": "/opt/homebrew/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:f311e5fb1680c804cf8ad81cacba4debbcf342286a6b9dcaedd1b63209fe39ec",
+              "sha256": "f311e5fb1680c804cf8ad81cacba4debbcf342286a6b9dcaedd1b63209fe39ec"
+            },
+            "arm64_ventura": {
+              "cellar": "/opt/homebrew/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:bf3da035036c36a50e9159c7e0f1d60cedf30430ab0084c204f43dd2ec85c06c",
+              "sha256": "bf3da035036c36a50e9159c7e0f1d60cedf30430ab0084c204f43dd2ec85c06c"
+            },
+            "arm64_monterey": {
+              "cellar": "/opt/homebrew/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:3423bd27091954d38f38ebbf70fa34732fc2512e38fdb30e46b89f163605d4e1",
+              "sha256": "3423bd27091954d38f38ebbf70fa34732fc2512e38fdb30e46b89f163605d4e1"
+            },
+            "sonoma": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:0489c70b7a5c85bee85a79b61cbb8310f1e702f8fbbee60f5bcb18494a99c79c",
+              "sha256": "0489c70b7a5c85bee85a79b61cbb8310f1e702f8fbbee60f5bcb18494a99c79c"
+            },
+            "ventura": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:06af41e06cb08571b33a73822734687445f071df6b94dd3b90ac066cc4a79697",
+              "sha256": "06af41e06cb08571b33a73822734687445f071df6b94dd3b90ac066cc4a79697"
+            },
+            "monterey": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:41c77f6bac3e8c1664c665fbe2b19b19ee9da57f8e1ad6697348286710cc3575",
+              "sha256": "41c77f6bac3e8c1664c665fbe2b19b19ee9da57f8e1ad6697348286710cc3575"
+            },
+            "x86_64_linux": {
+              "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:4675fa42080a52789082176f30b08892e90ec99c5eec3100fbbb6ad978f172ee",
+              "sha256": "4675fa42080a52789082176f30b08892e90ec99c5eec3100fbbb6ad978f172ee"
+            }
+          }
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.2.9",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.1.0.0.1.1700200546",
+        "Xcode": "15.1",
+        "macOS": "14.1"
+      }
+    }
+  }
+}

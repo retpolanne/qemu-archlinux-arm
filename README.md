@@ -36,8 +36,9 @@ sudo losetup -P /dev/loop1 arch-linux-arm.img
 ### 2.3 mkfs
 
 ```sh
-mkfs.vfat /dev/loop1p1
-mkfs.ext4 /dev/loop1p2
+sudo apt install dosfstools
+sudo mkfs.vfat /dev/loop1p1
+sudo mkfs.ext4 /dev/loop1p2
 ```
 
 ### 2.4 Mounting
@@ -65,7 +66,7 @@ mv boot/* /mnt/root/boot
 
 ```sh
 echo /dev/disk/by-uuid/`sudo blkid | grep loop1p2 | awk '{print $2}' | awk -F '"' '{print $2}'` / ext4 defaults 0 0 >> /mnt/root/etc/fstab
-echo /dev/disk/by-uuid/`sudo blkid | grep loop1p1 | awk '{print $2}' | awk -F '"' '{print $2}'` /boot vfat defaults 0 0 >> /mnt/root/etc/fstab
+echo /dev/disk/by-uuid/`sudo blkid | grep loop1p1 | awk '{print $3}' | awk -F '"' '{print $2}'` /boot vfat defaults 0 0 >> /mnt/root/etc/fstab
 ```
 
 ### 2.7 Umount
